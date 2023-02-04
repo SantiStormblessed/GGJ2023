@@ -9,11 +9,11 @@ Jeronimo Cano Alvarez
 Juan Fernando Melo Areiza
 
 ## Developers
-Felipe Roldan Restrepo
-Santiago Sanchez Fajardo
-Gabriel Solano
+- Felipe Roldan Restrepo
+- Santiago Sanchez Fajardo
+- Gabriel Solano
 
 ## Art Team
-Catalina Quintana
-Felipe Gaviria
-Juan Esteban Montoya
+- Catalina Quintana
+- Felipe Gaviria
+- Juan Esteban Montoya
