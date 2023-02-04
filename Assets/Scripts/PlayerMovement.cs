@@ -14,19 +14,29 @@ public class PlayerMovement : MonoBehaviour
     public float notMovingState = 0f;
     private bool endCheck = false;
     [SerializeField] private Animator animator;
-    //public bool isFlying = false;
+    public bool whichPlayer;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
     void Update() {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded()) {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-        }
-        if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f) {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        if (whichPlayer == true) {
+            horizontal = Input.GetAxisRaw("HorizontalBlue");
+            if (Input.GetButtonDown("JumpBlue") && IsGrounded()) {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            }
+            if (Input.GetButtonDown("JumpBlue") && rb.velocity.y > 0f) {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
+        } else {
+            horizontal = Input.GetAxisRaw("HorizontalRed");
+            if (Input.GetButtonDown("JumpRed") && IsGrounded()) {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            }
+            if (Input.GetButtonDown("JumpRed") && rb.velocity.y > 0f) {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
         }
         if (rb.velocity.magnitude == 0f) animator.SetBool("IsFlying", false);
         else animator.SetBool("IsFlying", true);
