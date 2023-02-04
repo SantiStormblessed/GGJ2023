@@ -3,10 +3,10 @@
 Members of the team:
 
 ## Project Manager
-Jeronimo Cano Alvarez
+- Jeronimo Cano Alvarez
 
 ## Game Designer
-Juan Fernando Melo Areiza
+- Juan Fernando Melo Areiza
 
 ## Developers
 - Felipe Roldan Restrepo
