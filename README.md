@@ -1,19 +1,27 @@
-# GGJ2023
+# SUA
+
+## GGJ2023
 
 Members of the team:
 
-## Project Manager
+### Project Management
 - Jeronimo Cano Alvarez
 
 ## Game Designer
 - Juan Fernando Melo Areiza
+- Jeronimo Cano Alvarez
 
-## Developers
+### Developers
 - Felipe Roldan Restrepo
 - Santiago Sanchez Fajardo
 - Gabriel Solano
+- Juan Fernando Melo
 
-## Art Team
+### Art Team
 - Catalina Quintana
 - Felipe Gaviria
 - Juan Esteban Montoya
+
+### Audio Engineer
+- Jeronimo Cano
+- Catalina Quintana
