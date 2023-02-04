@@ -13,6 +13,7 @@ public class PlatformGenController : MonoBehaviour
     public float maxDistance = 3;
 
     float currHeight = -3f;
+    int contador = 1;
 
     int platformType;
 
@@ -22,13 +23,15 @@ public class PlatformGenController : MonoBehaviour
     {
         //zona 1
         while (currHeight <= 15f){
+            contador += 1;
             Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
             currHeight += Random.Range(1f, maxDistance);
+            Debug.Log(contador + ": " + currHeight);
         }
 
         while (currHeight <= 35f){
             platformType = Random.Range(1, 11);
-
+            contador += 1;
             if(platformType <= 6){
                 Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
             }
@@ -37,12 +40,13 @@ public class PlatformGenController : MonoBehaviour
             }
 
             currHeight += Random.Range(1f, maxDistance);
+            Debug.Log(contador + ": " + currHeight);
         }
         //zona 2
 
         while (currHeight <= 75f){
             platformType = Random.Range(1, 11);
-    
+            contador += 1;
             if (platformType <= 5){
                 Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
             }
@@ -54,13 +58,14 @@ public class PlatformGenController : MonoBehaviour
             }
 
             currHeight += Random.Range(1f, maxDistance);
+            Debug.Log(contador + ": " + currHeight);
         }
 
         //zona 3
 
         while (currHeight <= 115f){
             platformType = Random.Range(1, 11);
-    
+            contador += 1;
             if (platformType <= 5){
                 Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
             }
@@ -75,6 +80,7 @@ public class PlatformGenController : MonoBehaviour
             }
 
             currHeight += Random.Range(1f, maxDistance);
+            Debug.Log(contador + ": " + currHeight);
         }
         
     }
