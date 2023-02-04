@@ -9,11 +9,18 @@ public class PlatformFall : MonoBehaviour
 
     Rigidbody2D playerRB;
 
+    public int whichPlayer = 1;
+
     public float FallSpeed = 0.9f;
 
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        if (whichPlayer == 1){
+            player = GameObject.FindWithTag("Player");
+        }
+        else{
+            player = GameObject.FindWithTag("Player2");
+        }
         playerRB = player.GetComponent<Rigidbody2D>();
     }
 

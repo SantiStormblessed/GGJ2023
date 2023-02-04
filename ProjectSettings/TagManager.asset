@@ -7,6 +7,8 @@ TagManager:
   - OneWayPlatform
   - Projectile
   - EndPlatform
+  - Border
+  - Player2
   layers:
   - Default
   - TransparentFX
