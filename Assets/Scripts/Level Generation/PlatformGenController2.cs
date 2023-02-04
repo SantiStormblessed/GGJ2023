@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformGenController : MonoBehaviour
+public class PlatformGenController2 : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] GameObject platform;
