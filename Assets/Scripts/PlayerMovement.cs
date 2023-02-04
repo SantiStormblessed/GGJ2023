@@ -8,11 +8,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteR;
     private float horizontal;
     public float speed = 8f;
-    [SerializeField] public float jumpingPower = 32f;
+    [SerializeField] public float jumpingPower = 100f;
     private float bounce = 20f;
-    private bool isFacingRight = true;
+    private bool isFacingRight = false;
     public float notMovingState = 0f;
     private bool endCheck = false;
+    [SerializeField] private Animator animator;
+    //public bool isFlying = false;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -26,11 +28,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f) {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+        if (rb.velocity.magnitude == 0f) animator.SetBool("IsFlying", false);
+        else animator.SetBool("IsFlying", true);
         Flip();
         
         if (notMovingState > 0f) {
             notMovingState -= Time.deltaTime;
         } else MovingAgain();
+        
     }
     private void FixedUpdate() {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -50,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         speed = 0f;
         jumpingPower = 0f;
         notMovingState = 3f;
-        spriteR.color = new Color(0.7f, 0.2f, 0.2f, .5f);
+        spriteR.color = new Color(1f, 1f, 1f, .5f);
     }
     public void MovingAgain() {
         speed = 8f;
@@ -59,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
             player.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
             endCheck = false;
         }
-        spriteR.color = new Color(0.7f, 0.2f, 0.2f, 1f);
+        spriteR.color = new Color(1f, 1f, 1f, 1f);
     }
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Projectile")) {
