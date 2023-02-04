@@ -465,8 +465,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f444bf72799bd2346aa6b0793451a053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 793737350}
+  spriteR: {fileID: 793737354}
   speed: 8
   jumpingPower: 32
+  notMovingState: 0
   rb: {fileID: 793737352}
   groundCheck: {fileID: 1388074766}
   groundLayer:
@@ -514,7 +517,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7169812, g: 0.23335709, b: 0.23335709, a: 1}
+  m_Color: {r: 0.7, g: 0.2, b: 0.2, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -886,8 +889,8 @@ GameObject:
   - component: {fileID: 1340982203}
   - component: {fileID: 1340982205}
   m_Layer: 0
-  m_Name: End
-  m_TagString: Untagged
+  m_Name: End Platform
+  m_TagString: EndPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

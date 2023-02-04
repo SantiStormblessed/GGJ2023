@@ -6,6 +6,7 @@ TagManager:
   tags:
   - OneWayPlatform
   - Projectile
+  - EndPlatform
   layers:
   - Default
   - TransparentFX
