@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    [SerializeField] private float jumpingPower = 16f;
+    public float speed = 8f;
+    [SerializeField] public float jumpingPower = 32f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
         Flip();
-
     }
     private void FixedUpdate() {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -37,5 +36,16 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+    public void NotMoving() {
+        speed = 0f;
+        jumpingPower = 0f;
+    }
+    public void MovingAgain() {
+        speed = 8f;
+        jumpingPower = 32f;
+    }
+    public Transform GetPlayer() {
+        return transform;
     }
 }
