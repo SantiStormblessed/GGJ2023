@@ -20,7 +20,7 @@ public class PlatformGenController2 : MonoBehaviour
     {
         //zona 1
         while (currHeight <= 15f){
-            Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+            Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             currHeight += Random.Range(1f, 3f);
         }
 
@@ -28,10 +28,10 @@ public class PlatformGenController2 : MonoBehaviour
             platformType = Random.Range(1, 11);
 
             if(platformType <= 6){
-                Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+                Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             }
             else{
-                Instantiate(movingPlatform, new Vector3(-5f, currHeight, 0), Quaternion.identity);
+                Instantiate(movingPlatform, new Vector3(4f, currHeight, 0), Quaternion.identity);
             }
 
             currHeight += Random.Range(1f, 3f);
@@ -42,13 +42,13 @@ public class PlatformGenController2 : MonoBehaviour
             platformType = Random.Range(1, 11);
     
             if (platformType <= 5){
-                Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+                Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             }
             else if(platformType <= 8 && platformType > 5){
-                Instantiate(movingPlatform, new Vector3(-5f, currHeight, 0), Quaternion.identity);
+                Instantiate(movingPlatform, new Vector3(4f, currHeight, 0), Quaternion.identity);
             }
             else{
-                Instantiate(brokenPlatform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+                Instantiate(brokenPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             }
 
             currHeight += Random.Range(1f, 3f);
@@ -60,16 +60,16 @@ public class PlatformGenController2 : MonoBehaviour
             platformType = Random.Range(1, 11);
     
             if (platformType <= 5){
-                Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+                Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             }
             else if(platformType <= 8 && platformType > 5){
-                Instantiate(movingPlatform, new Vector3(-5f, currHeight, 0), Quaternion.identity);
+                Instantiate(movingPlatform, new Vector3(4f, currHeight, 0), Quaternion.identity);
             }
             else if(platformType == 9){    
-                Instantiate(brokenPlatform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+                Instantiate(brokenPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             }
             else{
-                Instantiate(cloudPlatform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
+                Instantiate(cloudPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity);
             }
 
             currHeight += Random.Range(1f, 3f);

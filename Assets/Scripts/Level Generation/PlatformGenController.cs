@@ -10,6 +10,8 @@ public class PlatformGenController : MonoBehaviour
     [SerializeField] GameObject cloudPlatform;
     [SerializeField] GameObject movingPlatform;
 
+    public float maxDistance = 3;
+
     float currHeight = -3f;
 
     int platformType;
@@ -21,7 +23,7 @@ public class PlatformGenController : MonoBehaviour
         //zona 1
         while (currHeight <= 15f){
             Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
-            currHeight += Random.Range(1f, 3f);
+            currHeight += Random.Range(1f, maxDistance);
         }
 
         while (currHeight <= 35f){
@@ -34,7 +36,7 @@ public class PlatformGenController : MonoBehaviour
                 Instantiate(movingPlatform, new Vector3(-5f, currHeight, 0), Quaternion.identity);
             }
 
-            currHeight += Random.Range(1f, 3f);
+            currHeight += Random.Range(1f, maxDistance);
         }
         //zona 2
 
@@ -51,7 +53,7 @@ public class PlatformGenController : MonoBehaviour
                 Instantiate(brokenPlatform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
             }
 
-            currHeight += Random.Range(1f, 3f);
+            currHeight += Random.Range(1f, maxDistance);
         }
 
         //zona 3
@@ -72,7 +74,7 @@ public class PlatformGenController : MonoBehaviour
                 Instantiate(cloudPlatform, new Vector3(Random.Range(-7.882f, -1.006f), currHeight, 0), Quaternion.identity);
             }
 
-            currHeight += Random.Range(1f, 3f);
+            currHeight += Random.Range(1f, maxDistance);
         }
         
     }
