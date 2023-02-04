@@ -9,7 +9,7 @@ public class ProjectileShooter : MonoBehaviour
     [SerializeField] private float projectileSpeed = 10f;
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.L)) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             var projectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
             projectile.GetComponent<Rigidbody2D>().velocity = projectileSpawnPoint.right * -1f * projectileSpeed;
         }
