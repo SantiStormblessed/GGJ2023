@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 254890908}
   - component: {fileID: 254890909}
   m_Layer: 0
-  m_Name: Platform Generator
+  m_Name: Platform Generator Player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,8 @@ MonoBehaviour:
   platform: {fileID: 4035923066547812228, guid: ce77ca284de659f43868f3bca0ff47bb, type: 3}
   brokenPlatform: {fileID: 4592635083086774913, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
   cloudPlatform: {fileID: 5841839848077962072, guid: b283ff004a602f3478a08ff1d2d36526, type: 3}
-  movingPlatform: {fileID: 5940208393924578616, guid: ba5e9f306d143ff4d8fa466501809ee8, type: 3}
+  movingPlatform: {fileID: 7554798634543696900, guid: ec80b004f3cc05545b989dbe4ca6d332, type: 3}
+  maxDistance: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +394,7 @@ MonoBehaviour:
   speed: 8
   jumpingPower: 32
   notMovingState: 0
+  animator: {fileID: 0}
   rb: {fileID: 793737352}
   groundCheck: {fileID: 1388074766}
   groundLayer:
@@ -508,7 +510,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1156884851}
   - {fileID: 560600047}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -721,7 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4035923066547812227, guid: ce77ca284de659f43868f3bca0ff47bb, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4035923066547812227, guid: ce77ca284de659f43868f3bca0ff47bb, type: 3}
       propertyPath: m_LocalScale.x
@@ -778,11 +779,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -2870129648303192733, guid: ce77ca284de659f43868f3bca0ff47bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce77ca284de659f43868f3bca0ff47bb, type: 3}
---- !u!4 &1156884851 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-  m_PrefabInstance: {fileID: 4592635081949375475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1277625038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,60 +1038,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4592635081949375475
-PrefabInstance:
+--- !u!1 &1970442258
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 801093399}
-    m_Modifications:
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774912, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4592635083086774913, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
-      propertyPath: m_Name
-      value: Cracked Platform
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970442260}
+  - component: {fileID: 1970442261}
+  m_Layer: 0
+  m_Name: Platform Generator Player 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970442260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970442258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 5.97, z: 0.30565697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970442261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970442258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e890a54ca42f1c4290916c5a5549ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 793737350}
+  platform: {fileID: 4035923066547812228, guid: ce77ca284de659f43868f3bca0ff47bb, type: 3}
+  brokenPlatform: {fileID: 4592635083086774913, guid: aaab7a39b9b66334bbc74e9e60d1c37c, type: 3}
+  cloudPlatform: {fileID: 5841839848077962072, guid: b283ff004a602f3478a08ff1d2d36526, type: 3}
+  movingPlatform: {fileID: 7554798634543696900, guid: ec80b004f3cc05545b989dbe4ca6d332, type: 3}
