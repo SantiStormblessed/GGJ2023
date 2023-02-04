@@ -16,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update() {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded()) {
+        /*if (Input.GetButtonDown("Jump") && IsGrounded()) {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f) {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
+        }*/
         Flip();
         if (notMovingState > 0f) {
             notMovingState -= Time.deltaTime;
@@ -50,13 +50,12 @@ public class PlayerMovement : MonoBehaviour
         speed = 8f;
         jumpingPower = 32f;
     }
-    public Transform GetPlayer() {
+    /*public Transform GetPlayer() {
         return transform;
-    }
+    }*/
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Projectile")) {
             NotMoving();
-            Debug.Log("porfin");
         }
     }
 }
