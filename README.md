@@ -5,23 +5,22 @@
 Members of the team:
 
 ### Project Management
-- Jeronimo Cano Alvarez
+- Jerónimo Cano
 
-## Game Designer
+### Game Designer
 - Juan Fernando Melo Areiza
-- Jeronimo Cano Alvarez
+- Jerónimo Cano
 
 ### Developers
-- Felipe Roldan Restrepo
-- Santiago Sanchez Fajardo
+- Felipe Roldán Restrepo
+- Santiago Sánchez Fajardo
 - Gabriel Solano
-- Juan Fernando Melo
+- Juan Fernando Melo Areiza
 
 ### Art Team
-- Catalina Quintana
-- Felipe Gaviria
-- Juan Esteban Montoya
+- Catalina Quintana Ospina
+- Felipe Gaviria Vásquez
+- Juan Esteban Montoya Gómez
 
 ### Audio Engineer
-- Jeronimo Cano
-- Catalina Quintana
+- Jerónimo Cano
