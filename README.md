@@ -6,7 +6,6 @@ Members of the team:
 
 ### Project Management
 - Jeronimo Cano Alvarez
-- Catalina Quintana
 
 ## Game Designer
 - Juan Fernando Melo Areiza
