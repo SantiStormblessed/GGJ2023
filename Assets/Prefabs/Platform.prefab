@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4035923066547812226}
   - component: {fileID: 4035923066547812229}
   - component: {fileID: 4035923066547812224}
+  - component: {fileID: -2870129648303192733}
   m_Layer: 6
   m_Name: Platform
   m_TagString: OneWayPlatform
@@ -26,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4035923066547812228}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.97, y: 0.03, z: 0}
-  m_LocalScale: {x: 5.6672, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -35.819508, z: 0}
+  m_LocalScale: {x: 2.0126922, y: 0.35514757, z: 0.35514757}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,3 +132,16 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &-2870129648303192733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035923066547812228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b121ccf0b5e3a48bd63e939a57253c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FallSpeed: 2

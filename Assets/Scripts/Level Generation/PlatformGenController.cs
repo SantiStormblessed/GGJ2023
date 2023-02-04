@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlatformGenController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] GameObject player;
+
+    PlatformFall PlatformFall;
+    Rigidbody2D playerRB;
+    //float playerHeight = 0;
+
+
     void Start()
     {
-        
+        playerRB = player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
