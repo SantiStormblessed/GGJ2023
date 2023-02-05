@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class SunRotation : MonoBehaviour
 {
-    
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
