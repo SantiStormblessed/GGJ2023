@@ -53,7 +53,7 @@ public class PlatformGenController2 : MonoBehaviour
         }
         //zona 3
 
-        while (currHeight <= 123f){
+        while (currHeight <= 135f){
             platformType = Random.Range(1, 11);
     
             if (platformType <= 5){

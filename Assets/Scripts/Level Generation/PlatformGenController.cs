@@ -56,7 +56,7 @@ public class PlatformGenController : MonoBehaviour
 
         //zona 3
 
-        while (currHeight <= 123f){
+        while (currHeight <= 135f){
             platformType = Random.Range(1, 11);
             if (platformType <= 5){
                 Instantiate(platform, new Vector3(Random.Range(-7.882f, -1.254f), currHeight, 0), Quaternion.identity);
