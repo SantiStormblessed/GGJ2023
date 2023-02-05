@@ -53,16 +53,16 @@ public class PlatformGenController2 : MonoBehaviour
         }
         //zona 3
 
-        while (currHeight <= 115f){
+        while (currHeight <= 123f){
             platformType = Random.Range(1, 11);
     
             if (platformType <= 5){
                 Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
-            else if(platformType <= 8 && platformType > 5){
+            else if(platformType <= 7 && platformType > 5){
                 Instantiate(movingPlatform, new Vector3(Random.Range(2f, 6f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
-            else if(platformType == 9){    
+            else if(platformType == 8){    
                 Instantiate(brokenPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else{
