@@ -12,7 +12,7 @@ public class PlatformGenController : MonoBehaviour
 
     public float maxDistance = 3;
 
-    float currHeight = -3f;
+    float currHeight = -2f;
 
     int platformType;
 

@@ -10,7 +10,7 @@ public class PlatformGenController2 : MonoBehaviour
     [SerializeField] GameObject cloudPlatform;
     [SerializeField] GameObject movingPlatform;
 
-    float currHeight = -3f;
+    float currHeight = -2f;
 
     int platformType;
 
