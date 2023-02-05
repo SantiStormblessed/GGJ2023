@@ -5,22 +5,23 @@ using UnityEngine.SceneManagement;
 public class Cinematic : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(waitcin());
+    void Start() {
+        if (SceneManager.GetActiveScene().name == "Cinematic") StartCoroutine(waitcin());
+        else StartCoroutine(waitwin());
+
     }
-    IEnumerator waitcin()
-    {
+    IEnumerator waitcin() {
         yield return new WaitForSeconds(28f);
         SceneManager.LoadScene("MainScene");
     }
-
-    public void SkipCin()
-    {
+    IEnumerator waitwin() {
+        yield return new WaitForSeconds(5.25f);
+        SceneManager.LoadScene("MainScene");
+    }
+    public void SkipCin() {
         StartCoroutine(skip());
     }
-    IEnumerator skip()
-    {
+    IEnumerator skip() {
         yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene("MainScene");
     }
