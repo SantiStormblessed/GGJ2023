@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 168234455}
   - component: {fileID: 168234454}
   - component: {fileID: 168234453}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RightWall
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -1714,7 +1714,7 @@ GameObject:
   - component: {fileID: 852765159}
   - component: {fileID: 852765158}
   - component: {fileID: 852765157}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftWall
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -4621,7 +4621,7 @@ GameObject:
   - component: {fileID: 1871900113}
   - component: {fileID: 1871900112}
   - component: {fileID: 1871900111}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: MiddleWall
   m_TagString: Border
   m_Icon: {fileID: 0}
