@@ -348,6 +348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569882992}
   - component: {fileID: 569882993}
+  - component: {fileID: 569882994}
   m_Layer: 0
   m_Name: Projectile Shooter
   m_TagString: Untagged
@@ -392,10 +393,31 @@ MonoBehaviour:
   - {fileID: 322586721206989648, guid: 855aa1fef639f7b4885715d64f9c41ff, type: 3}
   - {fileID: 3913290939674273378, guid: db1432e1681ae494caec416d0137f550, type: 3}
   projectileSpeed: 20
+--- !u!114 &569882994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569882991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfeba7ba6f2d8864190b4a91589417b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPoint:
+  - {fileID: 1957600999}
+  - {fileID: 1474567307}
+  player: {fileID: 793737355}
 --- !u!4 &655705156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5940208393924578623, guid: ba5e9f306d143ff4d8fa466501809ee8, type: 3}
   m_PrefabInstance: {fileID: 5940208394479487355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &793737355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1310886377445845152, guid: 184195402b6fa5247b9b11b4d4346e3d, type: 3}
+  m_PrefabInstance: {fileID: 1310886378103476267}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &801093398
 GameObject:

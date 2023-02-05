@@ -8,12 +8,12 @@ public class ProjectileShooter : MonoBehaviour
     [SerializeField] private GameObject[] projectilePrefab;
     [SerializeField] private float projectileSpeed = 10f;
     private int fairness, level = 0, spawnPoint, spawnPointCheck = 0;
-    private float spawnTime = 2f, spawnTimer;
+    [SerializeField] private float spawnTime;
+    private float spawnTimer;
 
     void Start() {
-        //spawnTime = Random.Range(6f, 15f);
+        spawnTime = Random.Range(6f, 15f);
         spawnPoint = Random.Range(0, 2);
-        Debug.Log(spawnPoint);
     }
 
     void Update() {
@@ -32,7 +32,6 @@ public class ProjectileShooter : MonoBehaviour
         
         if (spawnPoint == 1) {
             var projectile = Instantiate(projectilePrefab[level], projectileSpawnPoint[spawnPoint].position, projectileSpawnPoint[spawnPoint].rotation);
-            //projectile.transform.rotation *= -1f;
             projectile.GetComponent<Rigidbody2D>().velocity = projectileSpawnPoint[spawnPoint].right * -1f * projectileSpeed;
         } else {
             var projectile = Instantiate(projectilePrefab[level], projectileSpawnPoint[spawnPoint].position, projectileSpawnPoint[spawnPoint].rotation);
@@ -41,9 +40,8 @@ public class ProjectileShooter : MonoBehaviour
 
         spawnPointCheck = spawnPoint;
 
-        //spawnTime = Random.Range(6f, 15f);
+        spawnTime = Random.Range(6f, 15f);
         spawnPoint = Random.Range(0, 2);
         spawnTimer = 0f;
-        Debug.Log(spawnPoint);
     }
 }
