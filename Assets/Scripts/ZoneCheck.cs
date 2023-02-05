@@ -14,12 +14,10 @@ public class ZoneCheck : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(transform.position.y);
         if(transform.position.y >= -75f && transform.position.y <= -35f){
             PS.level = 1;
         }
         else if(transform.position.y < -75f){
-            Debug.Log("trigereao");
             PS.level = 2;
         }
     }
