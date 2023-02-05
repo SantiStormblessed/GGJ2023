@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayScene.unity
     guid: fb92de70c6c2d7d40a36ae33305a5227
+  - enabled: 1
+    path: Assets/Scenes/BlueVictory.unity
+    guid: 1086fc2971033b24c821f8090ad02a04
+  - enabled: 1
+    path: Assets/Scenes/RedVictory.unity
+    guid: 5b84fb5617e2be94e98cb6ead794f748
   m_configObjects: {}
