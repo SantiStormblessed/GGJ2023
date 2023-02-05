@@ -7,7 +7,8 @@ public class ProjectileShooter : MonoBehaviour
     [SerializeField] private Transform[] projectileSpawnPoint;
     [SerializeField] private GameObject[] projectilePrefab;
     [SerializeField] private float projectileSpeed = 10f;
-    private int fairness, level = 0, spawnPoint, spawnPointCheck = 0;
+    private int fairness, spawnPoint, spawnPointCheck = 0;
+    [HideInInspector] public int level = 0;
     [SerializeField] private float spawnTime;
     private float spawnTimer;
 

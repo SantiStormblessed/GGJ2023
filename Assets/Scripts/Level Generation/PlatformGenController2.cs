@@ -23,7 +23,6 @@ public class PlatformGenController2 : MonoBehaviour
             Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             currHeight += Random.Range(1f, 3f);
         }
-        Debug.Log(currHeight);
         while (currHeight <= 35f){
             platformType = Random.Range(1, 11);
 
@@ -37,7 +36,6 @@ public class PlatformGenController2 : MonoBehaviour
             currHeight += Random.Range(1f, 3f);
         }
         //zona 2
-        Debug.Log(currHeight);
         while (currHeight <= 75f){
             platformType = Random.Range(1, 11);
     
@@ -53,7 +51,6 @@ public class PlatformGenController2 : MonoBehaviour
 
             currHeight += Random.Range(1f, 3f);
         }
-        Debug.Log(currHeight);
         //zona 3
 
         while (currHeight <= 115f){
@@ -74,7 +71,6 @@ public class PlatformGenController2 : MonoBehaviour
 
             currHeight += Random.Range(1f, 3f);
         }
-        Debug.Log(currHeight);
     }
 
     // Update is called once per frame
