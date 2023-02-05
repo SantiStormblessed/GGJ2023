@@ -20,14 +20,14 @@ public class PlatformGenController2 : MonoBehaviour
     {
         //zona 1
         while (currHeight <= 15f){
-            Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+            Instantiate(platform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             currHeight += Random.Range(1f, 3f);
         }
         while (currHeight <= 35f){
             platformType = Random.Range(1, 11);
 
             if(platformType <= 6){
-                Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+                Instantiate(platform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else{
                 Instantiate(movingPlatform, new Vector3(Random.Range(2f, 6f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
@@ -40,13 +40,13 @@ public class PlatformGenController2 : MonoBehaviour
             platformType = Random.Range(1, 11);
     
             if (platformType <= 5){
-                Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+                Instantiate(platform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else if(platformType <= 8 && platformType > 5){
                 Instantiate(movingPlatform, new Vector3(Random.Range(2f, 6f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else{
-                Instantiate(brokenPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+                Instantiate(brokenPlatform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
 
             currHeight += Random.Range(1f, 3f);
@@ -57,16 +57,16 @@ public class PlatformGenController2 : MonoBehaviour
             platformType = Random.Range(1, 11);
     
             if (platformType <= 5){
-                Instantiate(platform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+                Instantiate(platform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else if(platformType <= 7 && platformType > 5){
                 Instantiate(movingPlatform, new Vector3(Random.Range(2f, 6f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else if(platformType == 8){    
-                Instantiate(brokenPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+                Instantiate(brokenPlatform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
             else{
-                Instantiate(cloudPlatform, new Vector3(Random.Range(1.006f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
+                Instantiate(cloudPlatform, new Vector3(Random.Range(1.254f, 7.882f), currHeight, 0), Quaternion.identity).GetComponent<PlatformFall>().whichPlayer = 2;
             }
 
             currHeight += Random.Range(1f, 3f);

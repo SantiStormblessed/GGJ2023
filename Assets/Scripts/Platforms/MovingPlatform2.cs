@@ -13,7 +13,7 @@ public class MovingPlatform2 : MonoBehaviour
     }
     void Update() {
         transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
-        if (EdgeLeft.transform.position.x <= -8.882f || EdgeRight.transform.position.x >= 0f){
+        if (EdgeLeft.transform.position.x <= -8.882f || EdgeRight.transform.position.x >= 0.12f){
             speed = -speed;
         }
     }
