@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb48b852-5339-43af-a0e3-a3d5ed48643d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/AudioMixer2.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/AudioMixer2.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioMixer.mixer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioMixer.mixer.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="eb48b852-5339-43af-a0e3-a3d5ed48643d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +70,7 @@
       <workItem from="1675520594960" duration="4660000" />
       <workItem from="1675537930132" duration="5573000" />
       <workItem from="1675571332743" duration="1967000" />
-      <workItem from="1675618838575" duration="624000" />
+      <workItem from="1675618838575" duration="1222000" />
     </task>
     <servers />
   </component>
