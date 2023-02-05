@@ -9,7 +9,6 @@ Members of the team:
 
 ### Game Designer
 - Juan Fernando Melo Areiza
-- Jerónimo Cano
 
 ### Developers
 - Felipe Roldán Restrepo

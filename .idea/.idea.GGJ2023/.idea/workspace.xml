@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="eb48b852-5339-43af-a0e3-a3d5ed48643d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cinematic.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cinematic.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioMixer2.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioMixer2.mixer.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cinematic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cinematic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Santi Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Santi Testing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuOpciones.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuOpciones.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuOpciones.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuPausa.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675520587117</updated>
       <workItem from="1675520594960" duration="4660000" />
-      <workItem from="1675537930132" duration="5250000" />
+      <workItem from="1675537930132" duration="5573000" />
     </task>
     <servers />
   </component>
