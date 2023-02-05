@@ -387,7 +387,10 @@ MonoBehaviour:
   projectileSpawnPoint:
   - {fileID: 1957600999}
   - {fileID: 1474567307}
-  projectilePrefab: []
+  projectilePrefab:
+  - {fileID: 8055037089850529693, guid: 042b5bdc9560d124c8edd5f611a55a93, type: 3}
+  - {fileID: 322586721206989648, guid: 855aa1fef639f7b4885715d64f9c41ff, type: 3}
+  - {fileID: 3913290939674273378, guid: db1432e1681ae494caec416d0137f550, type: 3}
   projectileSpeed: 20
 --- !u!4 &655705156 stripped
 Transform:

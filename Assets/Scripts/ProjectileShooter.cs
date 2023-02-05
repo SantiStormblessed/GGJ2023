@@ -7,17 +7,43 @@ public class ProjectileShooter : MonoBehaviour
     [SerializeField] private Transform[] projectileSpawnPoint;
     [SerializeField] private GameObject[] projectilePrefab;
     [SerializeField] private float projectileSpeed = 10f;
-    private int random;
-    private int fairness;
+    private int fairness, level = 0, spawnPoint, spawnPointCheck = 0;
+    private float spawnTime = 2f, spawnTimer;
 
     void Start() {
-        //random = random.Next(6, 15);
+        //spawnTime = Random.Range(6f, 15f);
+        spawnPoint = Random.Range(0, 2);
+        Debug.Log(spawnPoint);
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            var projectile = Instantiate(projectilePrefab[0], projectileSpawnPoint[0].position, projectileSpawnPoint[0].rotation);
-            projectile.GetComponent<Rigidbody2D>().velocity = projectileSpawnPoint[0].right * -1f * projectileSpeed;
+        if (spawnPointCheck == spawnPoint) {
+            fairness++;
         }
+        if (fairness >= 4) {
+            fairness = 0;
+            if (spawnPoint == 0) spawnPoint = 1;
+            else spawnPoint = 0;
+        }
+        spawnTimer += Time.deltaTime;
+        if (spawnTimer >= spawnTime) ShootProjectile();
+    }
+    void ShootProjectile() {
+        
+        if (spawnPoint == 1) {
+            var projectile = Instantiate(projectilePrefab[level], projectileSpawnPoint[spawnPoint].position, projectileSpawnPoint[spawnPoint].rotation);
+            //projectile.transform.rotation *= -1f;
+            projectile.GetComponent<Rigidbody2D>().velocity = projectileSpawnPoint[spawnPoint].right * -1f * projectileSpeed;
+        } else {
+            var projectile = Instantiate(projectilePrefab[level], projectileSpawnPoint[spawnPoint].position, projectileSpawnPoint[spawnPoint].rotation);
+            projectile.GetComponent<Rigidbody2D>().velocity = projectileSpawnPoint[spawnPoint].right * projectileSpeed;
+        }
+
+        spawnPointCheck = spawnPoint;
+
+        //spawnTime = Random.Range(6f, 15f);
+        spawnPoint = Random.Range(0, 2);
+        spawnTimer = 0f;
+        Debug.Log(spawnPoint);
     }
 }
