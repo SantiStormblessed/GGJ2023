@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallingPlatform : MonoBehaviour
 {
     //Jero gay
-    private float fallDelay = 0.53f;
+    private float fallDelay = 0.25f;
     private float destroyDelay = 0.65f;
 
     [SerializeField] private Rigidbody2D rb;
