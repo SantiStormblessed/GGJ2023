@@ -5,14 +5,14 @@ using UnityEngine;
 public class FallingPlatform : MonoBehaviour
 {
     //Jero gay
-    private float fallDelay = 0.13f;
-    private float destroyDelay = 0.45f;
+    private float fallDelay = 0.53f;
+    private float destroyDelay = 0.65f;
 
     [SerializeField] private Rigidbody2D rb;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
+        if ((collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2")) && collision.gameObject.transform.position.y > transform.position.y)
         {
             StartCoroutine(Fall());
         }
