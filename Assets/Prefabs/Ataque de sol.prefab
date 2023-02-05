@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3913290939674273377}
   - component: {fileID: 3913290939674273376}
   - component: {fileID: 3913290939674273379}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ataque de sol
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a8227f11b4a32b4480b09fd051d006a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 2
 --- !u!61 &3913290939674273379
 BoxCollider2D:
   m_ObjectHideFlags: 0
