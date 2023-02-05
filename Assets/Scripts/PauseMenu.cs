@@ -11,20 +11,18 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject pauseMenuUI2;
     public GameObject pauseButton;
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
-        
+            Pause();
+        } 
+
     }
     
     // Start is called before the first frame update
