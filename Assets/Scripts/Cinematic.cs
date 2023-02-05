@@ -11,7 +11,7 @@ public class Cinematic : MonoBehaviour
     }
     IEnumerator waitcin()
     {
-        yield return new WaitForSeconds(29f);
+        yield return new WaitForSeconds(28f);
         SceneManager.LoadScene("MainScene");
     }
 
