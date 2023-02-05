@@ -20,22 +20,36 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    public AudioClip hurtClipBlue;
+    public AudioClip hurtClipRed;
+    public AudioClip jumpClip;
+
+    AudioSource audioSource;
+
+    void Start(){
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update() {
         if (whichPlayer == true) {
             horizontal = Input.GetAxisRaw("HorizontalBlue");
             if (Input.GetButtonDown("JumpBlue") && IsGrounded()) {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                audioSource.PlayOneShot(jumpClip);
             }
             if (Input.GetButtonDown("JumpBlue") && rb.velocity.y > 0f) {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                audioSource.PlayOneShot(jumpClip);
             }
         } else {
             horizontal = Input.GetAxisRaw("HorizontalRed");
             if (Input.GetButtonDown("JumpRed") && IsGrounded()) {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                audioSource.PlayOneShot(jumpClip);
             }
             if (Input.GetButtonDown("JumpRed") && rb.velocity.y > 0f) {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                audioSource.PlayOneShot(jumpClip);
             }
         }
         if (rb.velocity.magnitude == 0f) animator.SetBool("IsFlying", false);
@@ -79,10 +93,17 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Projectile")) {
             NotMoving();
+
+            if(whichPlayer) audioSource.PlayOneShot(hurtClipBlue);
+            else audioSource.PlayOneShot(hurtClipRed);
         }
         if (collision.gameObject.CompareTag("EndPlatform")) {
             NotMoving();
+
+            if(whichPlayer) audioSource.PlayOneShot(hurtClipBlue);
+            else audioSource.PlayOneShot(hurtClipRed);
             endCheck = true;
         }
+        
     }
 }

@@ -12,6 +12,8 @@ public class ProjectileShooter : MonoBehaviour
     [SerializeField] private float spawnTime;
     private float spawnTimer;
 
+    public AudioClip projectileSFX;
+
     void Start() {
         spawnTime = Random.Range(6f, 15f);
         spawnPoint = Random.Range(0, 2);
@@ -38,6 +40,8 @@ public class ProjectileShooter : MonoBehaviour
             var projectile = Instantiate(projectilePrefab[level], projectileSpawnPoint[spawnPoint].position, projectileSpawnPoint[spawnPoint].rotation);
             projectile.GetComponent<Rigidbody2D>().velocity = projectileSpawnPoint[spawnPoint].right * projectileSpeed;
         }
+
+        GetComponent<AudioSource>().PlayOneShot(projectileSFX);
 
         spawnPointCheck = spawnPoint;
 
