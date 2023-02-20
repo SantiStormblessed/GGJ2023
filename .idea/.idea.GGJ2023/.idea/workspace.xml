@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb48b852-5339-43af-a0e3-a3d5ed48643d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="eb48b852-5339-43af-a0e3-a3d5ed48643d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,14 +30,6 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
-    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Escritorio\GGJ2023.exe" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\piper\OneDrive\Escritorio" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <method v="2" />
-    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\piper\OneDrive\Escritorio\GameJam\GGJ2023 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -81,7 +70,7 @@
       <workItem from="1675520594960" duration="4660000" />
       <workItem from="1675537930132" duration="5573000" />
       <workItem from="1675571332743" duration="1967000" />
-      <workItem from="1675618838575" duration="1841000" />
+      <workItem from="1675618838575" duration="1222000" />
     </task>
     <servers />
   </component>
